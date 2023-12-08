@@ -1,0 +1,140 @@
+:root {
+/* Colors */
+/* Primary */
+--pink: hsl(322, 100%, 66%);
+--light-pink: hsl(321, 100%, 78%);
+--light-red: hsl(0, 100%, 63%);
+
+/* Neutral */
+--very-dark-cyan: hsl(192, 100%, 9%);
+--very-pale-blue: hsl(207, 100%, 98%);
+
+/* Typography */
+--primary-font: 'Poppins', sans-serif;
+--secondary-font: 'Open Sans', sans-serif; 
+
+--sm: 1.4rem;
+--md: 2.4rem;
+--lg: 6.4rem;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: var(--primary-font);
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr minmax(300px, 600px);
+}
+p {
+    font-family: var(--secondary-font);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.header__svg {
+    background-image: url('./images/logo.svg');
+    width: 100px;
+    height: 16px;
+}
+svg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__button {
+    width: 100px;
+    height: 27px;
+    color: var(--light-pink);
+    background: white;
+    border: var(--light-pink) solid 1px;
+    border-radius: 3rem;
+}
+.main {
+    margin-top: 4rem;
+    text-align: center;
+}
+.main p {
+    padding-top: 2rem;
+    font-size: var(--sm);
+}
+.main__section {
+    padding: 4rem;
+}
+.section__card {
+    margin-top: 10rem;
+}
+.card__title {
+    font-size: var(--md);
+}
+.card__p {
+
+}
+.card__button {
+    margin-top: 5rem;
+    width: 200px;
+    height: 45px;
+    background: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+}
+.card__img {
+    width: 100%;
+    height: 213px;
+    background-image: url('./images/screen-mockups.svg');
+}
+.card__comunities, .card__message {
+    display: flex;
+    width: 190px;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10rem;
+}
+.card__comunities h3, .card__message h3 {
+    font-family: var(--secondary-font);
+    font-size: var(--lg);
+    font-weight: 700;
+}
+.card__comunities ~ p, .card__message ~ p {
+    color: grey;
+}
+.comunities__svg {
+    background-image: url('./images/icon-communities.svg');
+    width: 34px;
+    height: 30px;
+}
+.message__svg {
+    background-image: url('./images/icon-messages.svg');
+    width: 25px;
+    height: 20px;
+}
+.footer {
+
+}
+.footer__section {
+
+}
+.section__title {
+
+}
+.section__p {
+
+}
+.section__list {
+
+}
+.list__element {
+
+}

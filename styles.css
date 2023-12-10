@@ -14,8 +14,8 @@
 --secondary-font: 'Open Sans', sans-serif; 
 
 --sm: 1.4rem;
---md: 2.4rem;
---lg: 6.4rem;
+--md: 1.8rem;
+--lg: 2.4rem;
 }
 * {
     margin: 0px;
@@ -68,10 +68,19 @@ svg {
     font-size: var(--sm);
 }
 .main__section {
-    padding: 4rem;
+    /* padding: 4rem; */
 }
 .section__card {
-    margin-top: 10rem;
+    position: relative;
+    margin: 10rem;
+    margin: 10rem 4rem 0rem 4rem;
+}
+.section__card h3 {
+    font-size: var(--md);
+}
+.margin {
+    margin-right: 0;
+    margin-left: 0;
 }
 .card__title {
     font-size: var(--md);
@@ -94,7 +103,7 @@ svg {
     height: 213px;
     background-image: url('./images/screen-mockups.svg');
 }
-.card__comunities, .card__message {
+.card__communities, .card__message {
     display: flex;
     width: 190px;
     margin: auto;
@@ -102,15 +111,15 @@ svg {
     align-items: flex-start;
     margin-top: 10rem;
 }
-.card__comunities h3, .card__message h3 {
+.card__communities h3, .card__message h3 {
     font-family: var(--secondary-font);
-    font-size: var(--lg);
+    font-size: 6.4rem;
     font-weight: 700;
 }
-.card__comunities ~ p, .card__message ~ p {
+.card__communities ~ p, .card__message ~ p {
     color: grey;
 }
-.comunities__svg {
+.communities__svg {
     background-image: url('./images/icon-communities.svg');
     width: 34px;
     height: 30px;
@@ -120,6 +129,48 @@ svg {
     width: 25px;
     height: 20px;
 }
+.card__background {
+    padding:3rem;
+    position: relative;
+    background: var(--very-pale-blue);
+}
+.background__img {
+    width: 80%;
+    margin-bottom: 6rem;
+}
+.card__svgTop, .card__svgBotton {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.top1 {
+    background-image: url('./images/bg-section-top-mobile-1.svg');
+}
+.toguether__img {
+    height: 205px;
+    margin-top: 5rem;
+    background-image: url('./images/illustration-grow-together.svg');
+}
+.botton1 {
+    height: 50px;
+    background-image: url('./images/bg-section-bottom-mobile-1.svg');
+}
+.corversations__img {
+    height: 170px;
+    background-image: url('./images/illustration-flowing-conversation.svg');
+    
+}
+.top2 {
+    background-image: url('./images/bg-section-top-mobile-2.svg');
+}
+.botton2 {
+    background-image: url('./images/bg-section-bottom-mobile-2.svg');
+}
+.users__img {
+    height: 190px;
+    background-image: url('./images/illustration-your-users.svg');
+}
+
 .footer {
 
 }

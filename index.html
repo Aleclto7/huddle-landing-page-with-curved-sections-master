@@ -77,36 +77,41 @@
   </main>
 
   <footer class="footer">
+    <svg class="footer__top"></svg>
     <section class="footer__section">
-      <h4 class="section__title">NEWSLETTER</h4>
-      <p class="section__p">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-        send you spam or pass on your email address</p>
-      <form>
-        <label for="email"></label>
-        <input type="email" name="email" required>
-        <input type="button" value="Subscribe"></input>
-      </form>
-    </section>
-    <section class="footer__section">
-      <svg class="section__svg"></svg>
-      <p class="section__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-        vestibulum a, ultrices quis sem.</p>
-      <u class="section__list">
-        <li class="list__element">
-          <svg></svg>
-          <p>Phone: +1-543-123-4567</p>
-        </li>
-        <li class="list__element">
-          <svg></svg>
-          <p>example@huddle.com</p>
-        </li>
-      </ul>
-      <ul class="section__list">
-        <li class="list__element"></li>
-        <li class="list__element"></li>
-        <li class="list__element"></li>
-      </ul>
+      <div class="section__container">
+        <p class="container__title">NEWSLETTER</p>
+        <p class="container__p">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address</p>
+        <form class="container__form">
+          <label for="email" class="form__label"></label>
+          <input type="email" name="email" required class="form__input">
+          <p class="form__error">Check your email please</p>
+          <input type="button" value="Subscribe" class="form__button"></input>
+        </form>
+      </div>
+      <div class="section__container">
+        <svg class="logo__svg"></svg>
+        <p class="container__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.</p>
+        <ul class="container__list">
+          <li class="list__element">
+            <i class="fa-solid fa-phone-volume fa-lg"></i>
+            <p>Phone: +1-543-123-4567</p>
+          </li>
+          <li class="list__element">
+            <i class="fa-solid fa-square-envelope fa-xl"></i>
+            <p>example@huddle.com</p>
+          </li>
+        </ul>
+        <ul class="container__list sotial-media">
+          <li class="list__element"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></li>
+          <li class="list__element"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></li>
+          <li class="list__element"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></li>
+        </ul>
+      </div>
     </section>
   </footer>
+  <script src="https://kit.fontawesome.com/045ac57a4e.js" crossorigin="anonymous"></script>
 </body>
 </html>

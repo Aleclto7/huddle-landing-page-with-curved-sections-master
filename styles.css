@@ -35,8 +35,8 @@ p {
     font-family: var(--secondary-font);
 }
 svg {
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
 }
 
@@ -97,6 +97,7 @@ svg {
 }
 .card__img {
     width: 100%;
+    max-width: 365px;
     height: 213px;
     background-image: url('./images/screen-mockups.svg');
 }
@@ -132,7 +133,7 @@ svg {
     background: var(--very-pale-blue);
 }
 .background__img {
-    width: 80%;
+    width: 260px;
     margin-bottom: 6rem;
 }
 .card__svgTop, .card__svgBotton {
@@ -149,7 +150,7 @@ svg {
     background-image: url('./images/illustration-grow-together.svg');
 }
 .botton1 {
-    height: 50px;
+    height: 60px;
     background-image: url('./images/bg-section-bottom-mobile-1.svg');
 }
 .corversations__img {
@@ -249,6 +250,10 @@ svg {
     width: 100%;
     justify-content: flex-start;
     align-items: center;
+}
+.list__element a {
+    text-decoration: none;
+    width: 100%;
 }
 .list__element i {
     width: 17px;

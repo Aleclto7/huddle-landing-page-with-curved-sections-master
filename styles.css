@@ -70,7 +70,7 @@ button {
 .main p, .container__p {
     text-align: center;
     margin: auto;
-    max-width: 400px;
+    max-width: 420px;
     padding-top: 2rem;
     font-size: var(--sm);
 }
@@ -145,7 +145,7 @@ button {
 .card__svgTop, .card__svgBotton {
     display: block;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
 }
 .top1 {
     background-image: url('./images/bg-section-top-mobile-1.svg');
@@ -156,7 +156,7 @@ button {
     background-image: url('./images/illustration-grow-together.svg');
 }
 .botton1 {
-    height: 60px;
+    /* height: 60px; */
     background-image: url('./images/bg-section-bottom-mobile-1.svg');
 }
 .conversations__img {
@@ -294,7 +294,11 @@ button {
     outline: none;
     border: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+    :root {
+        --md: 2.5rem;
+        --lg: 3rem;
+    }
     .header {
         padding: 5rem 3rem;
     }
@@ -326,7 +330,7 @@ button {
     }
     .position div:nth-child(1){
         grid-column: 2/3;
-        margin: 0 1rem;
+        margin: auto;
     }
     .position div:nth-child(2){
         grid-column: 1/2;
@@ -335,6 +339,7 @@ button {
     }
     .background__img {
         width: 340px;
+        margin: 0;
     }
     .toguether__img{
         height: 290px;
@@ -344,6 +349,44 @@ button {
     }
     .users__img {
         height: 280px;
+    }
+    .footer__top {
+        height: auto;
+    }
+    .footer__section {
+        padding-left: 10rem;
+        justify-items: start;
+    }
+    .section__container {
+        width:490px;
+    }
+    .footer__section .section__container .container__title {
+        margin-top: -3rem;
+    }
+    .position div:nth-child(2) svg {
+        margin-top: 0;
+    }
+    .position div:nth-child(2) p, .position div:nth-child(1) p {
+        max-width: 340px;
+        text-align: left;
+        margin: 0;
+    }
+    .list__element {
+        margin-bottom: 1.5rem;
+    }
+    .container__form {
+        grid-template-columns: 1fr 1fr 50px 1fr;
+        grid-template-areas: 
+        'input input none button'
+        'error error error error'
+        ;
+        margin-top: 2rem;
+    }
+    .form__input {
+        margin: 0;
+    }
+    .footer__section .container__form .form__error {
+        margin-top: 1rem;
     }
 
 }

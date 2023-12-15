@@ -198,6 +198,7 @@ button {
     font-weight: 600;
 }
 .container__p {
+    text-align: left;
     padding-right: 1rem;
     line-height: 2.2rem;
 }

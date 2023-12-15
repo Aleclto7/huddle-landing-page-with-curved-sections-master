@@ -307,6 +307,9 @@ button {
         width: 160px;
         height: 25px;
     }
+    .main__section div:nth-child(3) {
+        margin-top: 0;
+    }
     .card__img {
         max-width: 760px;
         height: 550px;

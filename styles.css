@@ -278,10 +278,13 @@ button {
     margin-right: 2rem;
     width: 15px;
 }
-
+.inactive {
+    display: none;
+}
 .input__error {
     border: var(--light-red) solid 1px;
 }
+
 .card__button:hover, .form__button:hover{
     background: var(--light-pink);
 }
